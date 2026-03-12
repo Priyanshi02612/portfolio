@@ -2,8 +2,6 @@
 
 A modern, high-performance developer portfolio designed with a "Dark Luxury" aesthetic. This project showcases my professional experience, technical skills, and key projects through an immersive, interactive interface.
 
-![Portfolio Preview](https://picsum.photos/seed/portfolio/1200/600?blur=2)
-
 ## ✨ Key Features
 
 - **AI Assistant Chat**: A real-time chat interface powered by **Google Gemini**, pre-trained on my resume data to answer questions about my background and skills.
