@@ -1,27 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 
-  --color-brand: #ffffff;
-  --color-accent: #6366f1; /* Indigo-500 */
+  /* Light mode (default) */
+  --color-canvas: #f5f7f1;
+  --color-paper: #fffdf8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eaf1ea;
+  --color-ink: #20231f;
+  --color-ink-soft: #3f473f;
+  --color-muted: #667066;
+  --color-subtle: #879184;
+  --color-line: #d7dfd3;
+  --color-accent: #0f8f80;
+  --color-accent-strong: #0a6f64;
+  --color-accent-soft: #dcefeb;
+  --color-coral: #d65a67;
+  --color-coral-soft: #f8e1e4;
+  --color-honey: #b87920;
+}
+
+@layer base {
+  .dark {
+    --color-canvas: #0f1419;
+    --color-paper: #1a1f2e;
+    --color-surface: #252d3d;
+    --color-surface-muted: #1e2534;
+    --color-ink: #e8ecf1;
+    --color-ink-soft: #c5cdd8;
+    --color-muted: #8b93a3;
+    --color-subtle: #6b7280;
+    --color-line: #3d4758;
+    --color-accent: #0f8f80;
+    --color-accent-strong: #15b8aa;
+    --color-accent-soft: #0d3d38;
+    --color-coral: #f17878;
+    --color-coral-soft: #3d2429;
+    --color-honey: #c9941f;
+  }
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 104px;
   }
   body {
-    @apply bg-[#050505] text-zinc-100 antialiased;
+    @apply bg-canvas text-ink antialiased;
   }
 }
 
 .glass {
-  @apply bg-zinc-900/70 backdrop-blur-md border border-white/5;
+  @apply bg-paper/90 backdrop-blur-md border border-line;
 }
 
 .text-balance {
@@ -29,5 +64,16 @@
 }
 
 .card-gradient {
-  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 143, 128, 0.08) 0%,
+    rgba(214, 90, 103, 0.05) 100%
+  );
+}
+
+.section-texture {
+  background-image:
+    linear-gradient(rgba(15, 143, 128, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 90, 103, 0.05) 1px, transparent 1px);
+  background-size: 52px 52px;
 }

@@ -10,7 +10,7 @@ export const RESUME_DATA = {
   objective:
     'Full Stack Web Developer with 2+ years of experience working on live, production-level web applications. Skilled in ReactJS, TypeScript, Node.js, Express.js, MongoDB, and MySQL. Experienced in deployment, API development, and collaborative tools. Passionate about learning new technologies and building scalable, user-focused solutions.',
   skills: {
-    'Programming Languages': ['JavaScript/TypeScript', 'SQL'],
+    'Programming Languages': ['JavaScript', 'TypeScript', 'SQL'],
     Frontend: ['ReactJS', 'Redux', 'Next.js', 'TailwindCSS', 'HTML', 'CSS'],
     Backend: ['Node.js', 'NestJS', 'Express.js', 'REST APIs', 'WebSockets'],
     Database: ['MySQL', 'MongoDB', 'PostgreSQL'],
@@ -41,10 +41,10 @@ export const RESUME_DATA = {
         'Cron Jobs',
       ],
       highlights: [
-        'Working as a Full Stack Developer on production-level web applications.',
-        'Developing scalable frontend and backend features using React.js, TypeScript, Node.js, and NestJS.',
-        'Integrating REST APIs and optimizing application performance.',
-        'Collaborating with cross-functional teams using Git, Jira, and ClickUp.',
+        'Worked as a Full Stack Developer on production-level web applications.',
+        'Developed scalable frontend and backend features using React.js, TypeScript, Node.js, and NestJS.',
+        'Integrated REST APIs and optimized application performance.',
+        'Collaborated with cross-functional teams using Git, Jira, and ClickUp.',
       ],
       keyProjects: [
         {
@@ -121,6 +121,7 @@ export const RESUME_DATA = {
         'Integrated Gemini AI for invoice generation, Cloudinary for image uploads, and SMTP for OTP and email notifications.',
         'Built scalable REST APIs and optimized application performance for efficient business operations.',
       ],
+      demoUrl: 'https://udyog-bill.netlify.app',
     },
     {
       title: 'PragatiDesk',
@@ -143,6 +144,7 @@ export const RESUME_DATA = {
         'Integrated Cloudinary for avatar uploads and Nodemailer for email notifications.',
         'Designed responsive dashboards with role-based access for Admins, Team Leaders, and Employees.',
       ],
+      demoUrl: 'https://pragati-desk.netlify.app',
     },
     {
       title: 'SwiftCart',
@@ -165,6 +167,7 @@ export const RESUME_DATA = {
         'Integrated JWT authentication, Google Sign-In, password reset via Nodemailer, and Stripe Checkout for secure online payments.',
         'Built responsive user interfaces and developed REST APIs for product, order, cart, and payment management.',
       ],
+      demoUrl: 'https://swiftcart-shop.netlify.app',
     },
     {
       title: 'ZeeCare',
