@@ -76,13 +76,11 @@ const SKILL_ICONS = [
 
 const SectionHeading = ({
   eyebrow,
-  title,
   description,
   icon: Icon,
   centered = false,
 }: {
   eyebrow: string;
-  title?: string;
   description?: string;
   icon: React.ComponentType<{ size?: number; className?: string }>;
   centered?: boolean;
@@ -98,9 +96,6 @@ const SectionHeading = ({
         {eyebrow}
       </span>
     </div>
-    <h2 className='text-4xl font-display font-bold tracking-tight text-ink md:text-5xl'>
-      {title || ''}
-    </h2>
     {description && (
       <p className='mt-5 max-w-2xl text-lg leading-relaxed text-muted'>
         {description}
@@ -517,7 +512,6 @@ export default function App() {
           <div>
             <SectionHeading
               eyebrow='About'
-              // title='A developer who can move between interface polish and backend structure.'
               description={RESUME_DATA.objective}
               icon={User}
             />
@@ -558,7 +552,6 @@ export default function App() {
         <div className='mx-auto max-w-7xl px-6'>
           <SectionHeading
             eyebrow='Skills'
-            title='Technical toolkit organized for full-stack delivery.'
             description='A practical mix of frontend, backend, database, deployment, service integration, and AI-assisted development tools.'
             icon={Cpu}
           />
@@ -803,7 +796,6 @@ export default function App() {
         <div className='mx-auto max-w-7xl px-6'>
           <SectionHeading
             eyebrow='Education'
-            title='Academic background.'
             description='Formal education that supports the technical foundation.'
             icon={GraduationCap}
           />
@@ -883,8 +875,8 @@ export default function App() {
                 Let's build something useful, elegant, and dependable.
               </h2>
               <p className='mt-6 max-w-2xl text-lg leading-relaxed text-paper/70'>
-                Priyanshi is currently looking for new opportunities and is open
-                to conversations about full-stack development roles.
+                I am currently looking for new opportunities and open to
+                conversations about full-stack development roles.
               </p>
             </div>
 
